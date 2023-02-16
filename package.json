@@ -27,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish-pages": "yarn && yarn build && cd build && git init && git branch -m pages && git remote add origin git@github.com:kgram/pdf-template-generator.git && git add . && git commit -m \"Publish\" && git push -f --set-upstream origin pages && rm -rf .git"
   },
   "eslintConfig": {
     "extends": [
