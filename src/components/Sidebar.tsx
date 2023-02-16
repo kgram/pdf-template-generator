@@ -69,9 +69,17 @@ export const Sidebar = ({ document, data, onDataChange, onOpenPdf, onDownloadZip
 					</div>}
 				</Tab>
 				<Tab title='About'>
-					<p>Some text...</p>
-					<h3>Subheader</h3>
-					<p>Some more text...</p>
+					<p>This is intended for generating sets of PDF-files with injected values. The original purpose was to generate certificate documents to a list of course participants.</p>
+					<p>Since this was made for a single purpose, it's not really made for starting from scratch. To get started, you will need a JSON-file <a href='https://github.com/kgram/pdf-template-generator/blob/main/src/Document.ts'>conforming to the type described here</a>.</p>
+					<p>If you're less technically inclined and would like help, or if proper support for some feature could help you, feel free to <a href='https://github.com/kgram/pdf-template-generator/issues/new'>create an issue</a>.</p>
+					<p>The document will define a number of fields that should be usable as template-fields. In the data-tab, you can input the entries needed. They should be written as semicolon-separated values.</p>
+					<p>There's lots of open ends currently, which could be fixed if needed:</p>
+					<ul>
+						<li>PDFs can only contain text and images, no borders, background-colors or anything like that</li>
+						<li>PDF names cannot be controlled</li>
+						<li>There are no rich-text controls (although it's supported if present in the template file)</li>
+						<li>There are no controls for setting up the document</li>
+					</ul>
 				</Tab>
 			</TabContainer>
 		</div>
